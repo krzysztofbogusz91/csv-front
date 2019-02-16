@@ -7,7 +7,7 @@
     "build": "NODE_ENV=production webpack",
     "start": "webpack-dev-server --open",
     "lint": "tslint --type-check",
-    "test": "jest --forceExit --verbose",
+    "test": "jest --detectOpenHandles --verbose",
     "test-coverage": "jest --forceExit --verbose --collectCoverageFrom=src/**/*.ts --coverage",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
@@ -22,7 +22,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "^24.1.0",
+    "jest": "23.0.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
